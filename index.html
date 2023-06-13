@@ -8,32 +8,24 @@
  rel="stylesheet" 
  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
  crossorigin="anonymous">
-
-
   <!-- arquivos style -->
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/darkMode.css" rel="stylesheet">
-
   <title>Calendar</title>
 </head>
   <!-- dark mode -->
-  
-
-<!-- -------- -->
-
 <body>
-
   <div class="container py-4">
 
     <div class="row align-items-md-stretch mb-4">
       <div class="col-md-6">
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <img src="Capturar.jpg" alt="Italian Trulli" style="width:400px;height:400px;">
+          <img src="Capturar.jpg" alt="Italian Trulli" style="width:535px;height:450px;border-radius: 10px;">
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <img src="Capturar1.jpg" alt="Italian Trulli" style="width:400px;height:400px;">
+          <img src="Capturar1.jpg" alt="Italian Trulli" style="width:535px;height:450px; border-radius: 10px;">
         </div>
       </div>
     </div>
@@ -43,14 +35,11 @@
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
           <div id="header">
             <div id="monthDisplay"></div>
-    
             <div>
               <button id="backButton">Back</button>
               <button id="nextButton">Next</button>
-            </div>
-              
+            </div>       
           </div>
-    
           <div id="weekdays">
             <div>Sunday</div>
             <div>Monday</div>
@@ -59,49 +48,32 @@
             <div>Thursday</div>
             <div>Friday</div>
             <div>Saturday</div>
-          </div>
-    
-    
+          </div> 
           <!-- div dinamic -->
           <div id="calendar" ></div>
-          
+        
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <img src="Capturar1.jpg" alt="Italian Trulli" style="width:400px;height:400px;">
+          <img src="Capturar1.jpg" alt="Italian Trulli" style="width:535px;height:450px;border-radius: 10px;">
         </div>
       </div>
     </div>
-
     </div>
-
   </div>
-
-
-
   <div id="newEventModal">
     <h2>New Event</h2>
-
     <input id="eventTitleInput" placeholder="Event Title"/>
-
     <button id="saveButton">Save</button>
     <button id="cancelButton">Cancel</button>
   </div>
-
   <div id="deleteEventModal">
     <h2>Event</h2>
-
     <div id="eventText"></div><br>
-
-
     <button id="deleteButton">Delete</button>
     <button id="closeButton">Close</button>
   </div>
-
-
-
   <script src="./scripts/main.js"></script>
-  
 </body>
 </html>
