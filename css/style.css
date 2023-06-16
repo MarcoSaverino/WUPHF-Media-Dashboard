@@ -8,7 +8,7 @@ html{
   --header-button:#92a1d1;
 
   --color-weekdays: #247BA0;
-  
+
   --box-shadow: #090f62;
 
   --hover: #faede8;
@@ -21,7 +21,7 @@ html{
 
 
  --color-day:white;
-  
+
 
 }
 
@@ -78,11 +78,11 @@ button {
 }
 .day {
   width: 62px;
-  padding: 20px;
-  height: 65px;
+  padding: 10px;
+  height: 60px;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: var(--color-day);
+  background-color: white;
   margin: 5px;
   box-shadow: 0px 0px 3px var(--box-shadow);
   display: flex;
@@ -97,15 +97,15 @@ button {
 .day + #currentDay {
   background-color:var(--current-day);
 }
-.event {
+
+/* .event {
   font-size: 10px;
-  padding: 3px;
-  background-color: var(--event-color);
-  color: white;
+  padding: 2px;
+  background-color: #62caf3;
+  color: rgb(240, 233, 233);
   border-radius: 5px;
-  max-height: 55px;
-  overflow: hidden;
-}
+} */
+
 .padding {
   cursor: default !important;
   background-color: var(--body-color) !important;
@@ -133,6 +133,7 @@ button {
   outline: none;
   border: none;
   box-shadow: 0px 0px 3px gray;
+
 }
 #eventTitleInput.error {
   border: 2px solid red;
@@ -155,5 +156,23 @@ button {
   height: 100vh;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
+}
+
+/* #event {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+} */
+
+.event {
+  font-size: 10px;
+  padding: 2px;
+  background-color: #62caf3;
+  color: black;
+  border-radius: 5px; 
+  text-align: center;
+  overflow: hidden;
+  
 }
 
