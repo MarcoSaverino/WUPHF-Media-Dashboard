@@ -1,3 +1,4 @@
-DROP DATABASE IF EXISTS midia_dash_db;
+import mysql from 'mysql2'
+DROP DATABASE IF EXISTS event_db;
 
-CREATE DATABASE midia_dash_db;
+CREATE DATABASE event_db;

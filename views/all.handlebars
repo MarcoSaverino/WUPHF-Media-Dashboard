@@ -1,0 +1,146 @@
+<div class="row align-items-md-stretch mb-4">
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <iframe src="https://www.sportsnet.ca/" width="550" height="450"></iframe>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <iframe src="https://archive.org/details/movies" width="550" height="450"></iframe>
+    </div>
+  </div>
+
+</div>
+
+
+
+{{!-- Calendar --}}
+
+<div class="row align-items-md-stretch mb-4">
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-light p-2  bg-body-tertiary border rounded-3">
+      <div id="cabec">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Previous</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+      <!-- div dinamic -->
+      <div id="calendar" ></div>
+          
+
+      <div id="newEventModal">
+        <h2>New Event</h2>
+        <input id="eventTitleInput" placeholder="Event Title"/>
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+      </div>
+      <div id="deleteEventModal">
+        <h2>Event</h2>
+
+        <div id="eventText"></div><br>
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  {{!-- Weather Dashboard --}}
+
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 bg-light">
+                <!--Search for a city Input-->
+          <div class="text-center">
+            <h4 class="pt-2"><strong>Search for a City:</strong></h4>
+          </div>
+                <!--Text box to search the city Name-->
+          <div class="input-group mb-4">
+            <input type="text" class="form-control" id="search-city" aria-label="City Search" aria-describedby="search-button">
+              <div class="input-group-append">
+                <button class="btn text-light" id="search-button" ><i class="fa fa-search"></i></button>
+              </div>
+          </div>
+              <!--Search History-->
+            <br>
+          <div class="text-center">
+            <h4 class="pt-2"><strong>Search History:</strong></h4>
+          </div>
+            <ul class="list-group">
+            </ul>
+            <br>
+          <div class="text-center mb-20">
+            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+          </div>
+
+        </div>
+
+        <div class="col-md-8 col-lg-8">
+          <div class="col-sm-12 mx-2 ps-3 pt-3 border border-dark rounded" id="current-weather">
+          <h4 class="date mt-1 bolder" id="current-date"></h4>
+          <h3 class="city-name mb-1 bolder" id="current-city"></h3>
+          <p>Temperature: <span class="current" id="temperature"></span></p>
+          <p>Wind speed: <span class="current" id="wind-speed"></span></p>
+          <p>Humidity: <span class="current" id="humidity"></span></p>                    
+          </div>
+          <br>
+          <!--5-Day Forecast - Temp, Wind, Humidity for the next five days according to the city searched-->
+          <div class="col-sm-12 mx-2" id="future-weather">
+            <h3>3-Day Forecast:</h3>
+            <div class="row text-light">
+              <div class="col col-sm col-lg forecast text-white mx-1 mb-20 p-2 mt-20 rounded">
+                <p class="imgnDay" id="fDate0"></p>
+                <p class="imgnDay" id="fImg0"></p>
+                <p class="imgnDay">Temp: <span id="fTemp0"></span></p>
+                <p class="imgnDay">Wind: <span id="fWind0"></span></p>
+                <p class="imgnDay">Humidity: <span id="fHumidity0"></span></p>
+              </div>
+              <div class="col col-sm col-lg forecast text-white mx-1 mb-20 p-2 mt-20 rounded">
+                <p class="imgnDay" id="fDate1"></p>
+                <p class="imgnDay" id="fImg1"></p>
+                <p class="imgnDay">Temp: <span id="fTemp1"></span></p>
+                <p class="imgnDay">Wind: <span id="fWind1"></span></p>
+                <p class="imgnDay">Humidity: <span id="fHumidity1"></span></p>
+              </div>
+              <div class="col col-sm col-lg forecast text-white mx-1 mb-20 p-2 mt-20 rounded">
+                <p class="imgnDay" id="fDate2"></p>
+                <p class="imgnDay" id="fImg2"></p>
+                <p class="imgnDay">Temp: <span id="fTemp2"></span></p>
+                <p class="imgnDay">Wind: <span id="fWind2"></span></p>
+                <p class="imgnDay">Humidity: <span id="fHumidity2"></span></p>
+              </div>                       
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>               
+  </div>
+</div>
+       
+
+<!--J-Query and Boostrap links-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>       
+
+  
+<script src="./js/weather.js"></script>
+<script src="./js/view-event.js"></script>
+
+<!-- //<script src="/js/add-event.js"></script>
+<!-- //This is the form for updating a event. According to MVC framework, what is this form responsible for? -->

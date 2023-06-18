@@ -1,0 +1,260 @@
+:root {
+  --primary: #3d5852;
+  --secondary: #86938f;
+  --tertiary: #5e877f;
+  --quatrinary: #6c6b67;
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: #aacbf3;
+}
+
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
+}
+
+
+#weekdays {
+  width: 95%;
+  display: flex;
+  color: var(--color-weekdays) ;
+}
+#weekdays div {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding: 7px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 62px;
+  padding: 10px;
+  height: 60px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px 8px 5px 5px;
+  box-shadow: 0px 0px 3px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15%;
+
+}
+.day:hover {
+  background-color: var(--hover);
+}
+
+.day + #currentDay {
+  background-color: #6da9ee;
+}
+
+.event {
+  font-size: 10px;
+  padding: 2px;
+  background-color: #62caf3;
+  color: rgb(240, 233, 233);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
+.padding {
+  cursor: default !important;
+  background-color: var(--body-color) !important;
+  box-shadow: none !important;
+  border-style: none;
+
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #92defc;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 700px;
+  left: 450px;
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  width: 60px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color:rgb(211, 62, 62);
+}
+#saveButton, #closeButton {
+  width: 60px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color:rgb(5, 66, 9);
+}
+#eventText {
+  font-size: 14px;
+}
+#BackDropModal {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#cabec{
+  padding: 10px;
+  color: red ;
+  font-size: 31px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cabec button {
+  width: 50px;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* <!--General Properties--> */
+  *{
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* <!--Title/header CSS Properties--> */
+
+.figurehead {
+    margin: auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+} */
+
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* <!--Buttons CSS properties--> */
+
+.btn {
+    background-color: deepskyblue;
+}
+
+/* <!--Search History CSS properties--> */
+
+.list-group-item {
+    background-color: gainsboro;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: lightslategray;
+}
+
+
+/* <!--5days Forecast CSS Properties--> */
+h3 {
+    font-weight: bold;
+}
+
+.forecast{
+    background-color:deepskyblue;
+    font-size: 0.9em;
+}
+
+span{
+    font-size: 1em;
+}
+
+.imgnDay {
+    text-align: center;
+}

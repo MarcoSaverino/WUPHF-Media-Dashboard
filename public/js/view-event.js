@@ -1,4 +1,3 @@
-
 // Globla Variable
 
 let nav = 0
@@ -17,6 +16,28 @@ const calendar = document.getElementById('calendar') // div calendar:
 const weekdays = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] //array with weekdays:
 
 //functions
+
+
+// import mysql from 'mysql2'
+
+// var con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "password",
+//   database: "event_db"
+// });
+
+// con.connect(function(err) {
+//   if (err) throw err;
+//   //Select all customers and return the result object:
+//   con.query("SELECT * FROM event", function (err, result, fields) {
+//     if (err) throw err;
+//     console.log(result);
+//   });
+// });
+
+              
+
 
 
 
@@ -187,10 +208,8 @@ function buttons (){
   document.getElementById('closeButton').addEventListener('click', ()=>closeModal())
   
 }
+
+
 load()
 
 buttons()
-
-
-
-
