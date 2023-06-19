@@ -108,8 +108,8 @@ header {
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
   width: 350px;
-  top: 700px;
-  left: 450px;
+  top: 900px;
+  left: 350px;
   position: absolute;
   font-family: sans-serif;
 }
@@ -307,6 +307,14 @@ span{
     font-size: 25px;
   }
 
+  #newEventModal, #deleteEventModal {
+    padding: 25px;
+    width: 350px;
+    top: 900px;
+    left: 200px;
+  }
+  
+
   
 }
 
@@ -344,6 +352,38 @@ span{
   #monthDisplay{
     font-size: 23px;
   }
+
+  #newEventModal, #deleteEventModal {
+    padding: 25px;
+    width: 300px;
+    top: 900px;
+    left: 120px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  #eventTitleInput {
+    padding: 15px;
+    width: 93%;
+    height: 25px;
+    font-size: 13px;
+    margin-bottom: 9px;
+  
+  }
+  #cancelButton, #deleteButton {
+    width: 45px;
+    font-size: 12px;
+    padding: 3px;
+  }
+  #saveButton, #closeButton {
+    width: 45px;
+    font-size: 12px;
+    padding: 3px;
+  }
+
+
 
   
 }
@@ -388,6 +428,39 @@ span{
     padding: 2px;
     font-size: 6px;
   }
+
+  #newEventModal, #deleteEventModal {
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    top: 900px;
+    left: 230px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  #eventTitleInput {
+    padding: 10px;
+    width: 90%;
+    height: 20px;
+    font-size: 10px;
+    margin-bottom: 5px;
   
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    width: 40px;
+    font-size: 10px;
+    padding: 3px;
+  }
+  #saveButton, #closeButton {
+    width: 40px;
+    font-size: 10px;
+    padding: 3px;
+  }
   
 }
