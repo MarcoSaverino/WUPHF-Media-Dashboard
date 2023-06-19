@@ -1,0 +1,9 @@
+
+  body {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    background-image: url(../images/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
