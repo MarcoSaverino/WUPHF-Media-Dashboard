@@ -18,6 +18,15 @@
 <body>
   <header>
     <h1>Welcome to the Media Dashboard</h1>
+    <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        {{!-- <a href="/profile">profile</a> | --}}
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a class = "main-login" href="/login">LOGIN</a>
+        {{/if}}
+      </nav>
   </header>
   <main>
   <div class="container py-4">
@@ -25,9 +34,12 @@
     </div>
   </div>
 
-
 <!--  <script src="./js/view-event.js"></script> --->
 
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
