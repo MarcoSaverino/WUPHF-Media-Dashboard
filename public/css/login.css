@@ -8,16 +8,3 @@
     background-size: cover;
   }
 
-  #header{
-    background:url(../images/LOGO.png) no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-
-  #wrapperHeader{
-    position: relative;
-    background-image:url(../images/LOGO.png);
-    background-repeat: no-repeat;
-
-  }
