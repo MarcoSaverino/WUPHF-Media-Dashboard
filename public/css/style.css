@@ -16,7 +16,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: #aacbf3;
+  background-image: url(../images/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -24,8 +26,9 @@ body {
 header {
   padding: 20px;
   text-align: center;
-  background: var(--primary);
-  color: var(--light);
+  background-image: url(../images/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .responsive-iframe{
